@@ -13,18 +13,7 @@ var command3 = "do-what-it-says";
 
 var liriCat = process.argv[2];
 var userSearch = process.argv.slice(3);
-console.log(userSearch);
-
-// spotify
-//   .search({ type: 'track', query: userInput })
-//   .then(function(data) {
-//     console.log(data);
-//   })
-//   .catch(function(err) {
-//     console.log(err);
-//   });
-
-
+// console.log(userSearch);
 
 if (liriCat === command1) {
     spotify.search({ type: 'track', query: userSearch }, function (err, data) {
